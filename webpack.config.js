@@ -14,23 +14,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            babelrc: false,
-            presets: [
-              ['es2015', { modules: false }],
-              'react',
-            ],
-            plugins: [
-              'syntax-dynamic-import',
-              'transform-class-properties',
-              'transform-object-assign',
-              require.resolve('./babel'),
-            ],
-          }
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader',
+        options: {
+          plugins: ['@babel/plugin-proposal-class-properties'],
         },
       },
     ],
@@ -38,7 +26,7 @@ module.exports = {
   devtool: 'inline-source-map',
   resolve: {
     alias: {
-      'react-loadable': path.resolve(__dirname, 'src'),
+      'react-loadable-16.6': path.resolve(__dirname, 'src'),
     },
   },
   plugins: [
