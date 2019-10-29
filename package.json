@@ -1,5 +1,5 @@
 {
-  "name": "kmi-react-loadable-16.6",
+  "name": "kmi-react-loadable",
   "version": "16.6.0",
   "description": "A higher order component for loading components with promises supporting React 16.6+",
   "main": "lib/index.js",
