@@ -1,6 +1,6 @@
 {
   "name": "kmi-react-loadable",
-  "version": "16.7.0",
+  "version": "16.8.0",
   "description": "A higher order component for loading components with promises supporting React 16.6+",
   "main": "lib/index.js",
   "author": "Kevin Hippert",
